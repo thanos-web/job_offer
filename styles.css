@@ -490,7 +490,7 @@ p {
     grid-row-end: 7;
 }
 .img6{
-    background-image: url(img/10.jpg);  
+    background-image: url(img/10-2.png);  
     grid-column-start: 3;
     grid-column-end: 5;
     grid-row-start: 5;
@@ -535,9 +535,9 @@ p {
     display: none;
 }
 
-.slider-container{
+ .slider-container{
     display: none;
-}
+} 
 
 @media (max-width: 1440px) {
     .card__description {
@@ -796,11 +796,6 @@ p {
         align-items: center;
         justify-content: center;
     }
-/* 
-    .offer__info{
-        align-items: center;
-        
-    } */
 
     .sticker__text {
         color: #FFF;
@@ -820,8 +815,6 @@ p {
     .bonus__card,
     .realtorwork__wrapper,
     .slider-container
-    
-
     {
         box-shadow: 4px 4px 0px 0px #000;
     }
@@ -865,12 +858,12 @@ p {
     }
 
     .card__description{
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .advantages__cards {
         gap: 8px;
-        grid-auto-rows: 200px;
+        grid-auto-rows: 250px;
     }
     .content__wrapper {
         padding: 0 10px;
@@ -879,7 +872,6 @@ p {
     .partner__logo {
         height: 24px;
         width: 100px;
-
     }
 
     .container__logos {
@@ -897,7 +889,7 @@ p {
     }
 
     .h2__description {
-        font-size: 14px;
+        font-size: 16px;
         text-align: center;
     }
 
@@ -921,7 +913,7 @@ p {
         border-radius: 10px;
     }
     p {
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 400;
     }
 
@@ -964,6 +956,7 @@ p {
     /* СЛАЙДЕР */
     
       .slider-container {
+        display:flex ;
         position: relative;
         height: 300px;
         margin: 24px auto;
