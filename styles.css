@@ -118,6 +118,10 @@ header {
     font-weight: 600;
 
 }
+.primary a {
+    text-decoration: none;
+    color: #FFF;
+}
 
 .offer__info {
     display: flex;
@@ -531,6 +535,9 @@ p {
     display: none;
 }
 
+.slider__section{
+    display: none;
+}
 
 @media (max-width: 1440px) {
     .card__description {
@@ -733,9 +740,6 @@ p {
 
 
 
-
-
-
   @media (max-width: 540px) {
 
     section {
@@ -814,7 +818,9 @@ p {
     .sticker__wrapper,
     .card,
     .bonus__card,
-    .realtorwork__wrapper 
+    .realtorwork__wrapper,
+    .slider-container
+    
 
     {
         box-shadow: 4px 4px 0px 0px #000;
@@ -829,6 +835,7 @@ p {
         width: 60%;
         font-size: 16px;
         font-weight: 500;
+
     }
 
     .underline{
@@ -858,7 +865,7 @@ p {
     }
 
     .card__description{
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .advantages__cards {
@@ -903,7 +910,7 @@ p {
         grid-gap: 8px; 
     }
     .bonus__description{
-        font-size: 14px;        
+        font-size: 16px;        
     }
 
     .big__number{
@@ -914,7 +921,7 @@ p {
         border-radius: 10px;
     }
     p {
-        font-size: 12px;
+        font-size: 14px;
         font-weight: 400;
     }
 
@@ -958,10 +965,11 @@ p {
     
       .slider-container {
         position: relative;
-        width: 300px;
-        height: 250px;
-        margin: 0 auto;
+        height: 300px;
+        margin: 24px auto;
         overflow: hidden;
+        border-radius:20px;
+
       }
       
       .slider {
@@ -970,20 +978,23 @@ p {
       }
       
       .slider img {
-        width: fit-content;
-        height: 250px;
+        width: 100%;
+        height: 300px;
         object-fit: cover;
-      }
+        object-position: center;
+        
+     }
       
       .prev-button,
       .next-button {
         position: absolute;
-        top: 50%;
+        top: 80%;
         transform: translateY(-50%);
         width: 50px;
         height: 50px;
-        background-color: transparent;
+        background-color:rgba(0, 0, 0, 0.6) ;
         border: none;
+        border-radius:10px;
         font-size: 24px;
         color: white;
       }
