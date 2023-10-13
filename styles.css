@@ -935,6 +935,7 @@ p {
 
     .bonus__description {
         font-size: 16px;
+        color: #000;
     }
 
     .big__number {
